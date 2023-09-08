@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * main - the main function is to print the last digits and check if > 5, < 6, or 0
+ * main - the main function is to print the last digits
  *
  * Return: return 0
  */
@@ -14,14 +14,17 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 
-	/* my conditional statements here */
 	if ((n % 10) > 5)
 	{
 		printf("Last digit of %d is %d and is greater than 5\n", n, n % 10);
 	}
 	else if ((n % 10) < 6 && (n % 10) != 0)
+	{
 		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, n % 10);
+	}
 	else
+	{
 		printf("Last digit of %d is %d and is 0\n", n, n % 10);
+	}
 	return (0);
 }
