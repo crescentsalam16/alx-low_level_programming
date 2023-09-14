@@ -1,11 +1,12 @@
-#include "main.h"
-
 /**
- * _isdigit - look for a digit from 0 to 9
- * @c: int parameter  to be checked
- * Return: 1 if c is a digit, 0 otherwise
+ * _isupper - look for capital letter.
+ * @c: para to check.
+ * Return: 1 if c is uppercase, otherwise return 0.
  */
-int _isdigit(int c)
+int _isupper(int c)
 {
-	return (c >= '0' && c <= '9');
+	if (c >= 'A' && c <= 'Z')
+		return (1);
+	else
+		return (0);
 }
